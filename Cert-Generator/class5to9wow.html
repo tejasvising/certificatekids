@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Certificate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="favicon" href="favicon.ico">
+</head>
+
+<body>
+  
+    <main>
+
+        <label for="name">Type Person's Name</label>
+        <input required type="text" name="Name" autocomplete="name" placeholder="John Bos" id="name" minlength="3"
+            maxlength="16">
+            <label for="purpose">Type The Purpose For Certificate</label>
+        <input required type="text" name="Purpose" autocomplete="name" placeholder="Web Development" id="purpose" minlength="3"
+            maxlength="100"> 
+            <label for="purpose">Class</label>
+            <input required type="number" name="Class" autocomplete="name" placeholder="1" id="class" minlength="3"
+                maxlength="50">
+            <!-- <label for="sign">Add Sign</label>
+        <input required type="text" name="Sign" autocomplete="name" placeholder="Martin Lian" id="sign" minlength="3"
+            maxlength="50"> -->
+            <label for="start">Date:</label>
+
+<input type="date" id="date" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01">
+
+           
+
+        <Button id="submitBtn">Get Certificate</Button>
+
+
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./index5to9wow.js"></script>
+</body>
+
+</html>

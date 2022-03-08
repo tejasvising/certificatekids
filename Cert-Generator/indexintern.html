@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Certificate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="favicon" href="favicon.ico">
+</head>
+
+<body>
+  
+    <main>
+        <label for="start">Date:</label>
+
+        <input type="date" id="date" name="trip-start"
+               value="2018-07-22"
+               min="2018-01-01">
+        <label for="name">Type Person's Name</label>
+        <input required type="text" name="Name" autocomplete="name" placeholder="John Bos" id="name" minlength="3"
+            maxlength="16">
+            <label for="name">Type College year</label>
+        <input required type="text" name="College year" autocomplete="name" placeholder="1st year" id="year" minlength="3"
+            maxlength="16">
+            <label for="name">Type Person's Degree</label>
+        <input required type="text" name="College degree" autocomplete="name" placeholder="B.Tech(CS)" id="degree" minlength="3"
+            maxlength="16">
+            <label for="name">Type College Name</label>
+            <input required type="text" name="College" autocomplete="name" placeholder="IIT" id="college" minlength="3"
+                >
+                <label for="start">Start Date:</label>
+
+                <input type="date" id="startdate" name="trip-start"
+                value="2018-07-22"
+                min="2018-01-01">
+                       <label for="start">End Date:</label>
+
+                       <input type="date" id="enddate" name="trip-start"
+                              value="2018-07-22"
+                              min="2018-01-01">
+          
+            <!-- <label for="sign">Add Sign</label>
+        <input required type="text" name="Sign" autocomplete="name" placeholder="Martin Lian" id="sign" minlength="3"
+            maxlength="50"> -->
+           
+            <label for="name">Type Pronoun</label>
+            <input required type="text" name="pronoun" autocomplete="name" placeholder="He" id="pronoun" minlength="3"
+                >
+                <label for="name">Type Role</label>
+                <input required type="text" name="role" autocomplete="name" placeholder="web developer" id="role" minlength="3"
+                    >
+       <label for="purpose">Type The Purpose For Certificate</label>
+       <input required type="text" name="Purpose" autocomplete="name" placeholder="is a quick learner" id="purpose" minlength="3"
+           maxlength="500"> 
+           <label for="purpose">Additional Description</label>
+       <input required type="text" name="description" autocomplete="name" placeholder="has good management skills" id="description" minlength="3"
+           maxlength="500"> 
+
+        <Button id="submitBtn">Get Certificate</Button>
+
+
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./indexintern.js"></script>
+</body>
+
+</html>
